@@ -8,7 +8,6 @@ function validate() {
   checkPassword(password);
   checkVal(password, conformPassword);
 }
-function error() {}
 function checkUsername(user) {
   const valid =
     user.length > 7
@@ -24,7 +23,7 @@ function checkUsername(user) {
           position: "left",
           stopOnFocus: true,
           style: {
-            background: "linear-gradient(to right, #00b09b, #96c93d)",
+            background: "cornflowerblue",
           },
         }).showToast();
 }
@@ -43,7 +42,7 @@ function checkEmail(email) {
           position: "left", // `left`, `center` or `right`
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
-            background: "linear-gradient(to right, #00b09b, #96c93d)",
+            background: "cornflowerblue",
           },
         }).showToast();
 }
